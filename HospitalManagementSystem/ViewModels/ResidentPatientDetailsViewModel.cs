@@ -181,7 +181,7 @@ namespace HospitalManagementSystem.ViewModels
             ((ResidentPatient)Hospital.Patients[PatientID]).Room.Patients.Remove(PatientID);
             ((ResidentPatient)Hospital.Patients[PatientID]).Room = Hospital.Rooms[EditRoomNumberComboBox.Key];
             Hospital.Rooms[EditRoomNumberComboBox.Key].addPatient(Hospital.Patients[PatientID]);
-
+            
             PatientRoomNumber = EditRoomNumberComboBox.Value;
 
             NursesList.Clear();

@@ -293,7 +293,6 @@ namespace HospitalManagementSystem.Models
             {
                 ((ResidentPatient)Patients[PatientId]).Room.Patients.Remove(PatientId);                
             }
-
             Patients.Remove(PatientId);
         }
 
